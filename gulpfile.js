@@ -85,10 +85,10 @@ const wxss = () => {
 }
 gulp.task(wxss)
 
-/* 编译压缩图片 */
+/* 图片 */
 const img = () => {
     return gulp
-        .src(imgFiles, { since: gulp.lastRun(img) })
+        .src(imgFiles)
         // .pipe(imagemin())
         .pipe(gulp.dest(distPath))
 }
