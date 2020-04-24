@@ -1,0 +1,11 @@
+<import src="../../templates/index_tpl/index_tpl.wxml" />
+<view class="demo-page">
+  <view class="page-content">
+    <view class="text">page数据：{{num}}</view>
+    <view>
+      <van-button type="primary" bindtap="clickInPage">点击</van-button>
+    </view>
+  </view>
+  <template is="indexTpl" data="{{num}}" />
+  <components-demo num="{{num}}" bindaddNum="addNum"></components-demo>
+</view>

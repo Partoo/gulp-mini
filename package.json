@@ -1,0 +1,25 @@
+{
+  "name": "wx-miniprogram-blueprint",
+  "version": "1.0.0",
+  "description": "gulp 微信小程序框架",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "test": "gulp test"
+  },
+  "author": "Partoo",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss-px2rpx": "0.0.4",
+    "yargs": "^15.3.1"
+  }
+}

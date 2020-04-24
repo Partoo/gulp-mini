@@ -1,0 +1,40 @@
+module.exports = {
+  'root': true,
+  'env': {
+    'node': true,
+    'es6': true
+  },
+  'extends': 'eslint:recommended',
+  'globals': {
+    'Atomics': 'readonly',
+    'SharedArrayBuffer': 'readonly',
+    'getApp': false,
+    'Page': false,
+    'wx': false,
+    'App': false,
+    'getCurrentPages': false,
+    'Component': false
+  },
+  'parserOptions': {
+    'ecmaVersion': 2018,
+    'sourceType': 'module'
+  },
+  'rules': {
+    'indent': [
+      'error',
+      4
+    ],
+    'linebreak-style': [
+      'error',
+      'unix'
+    ],
+    'quotes': [
+      'error',
+      'single'
+    ],
+    'semi': [
+      'error',
+      'never'
+    ]
+  }
+}
