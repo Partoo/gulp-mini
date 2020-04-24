@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
 const del = require('del')
-const imagemin = require('gulp-imagemin')
+// const imagemin = require('gulp-imagemin')
 const path = require('path')
 const eslint = require('gulp-eslint')
 const srcPath = './src/**'
@@ -89,7 +89,7 @@ gulp.task(wxss)
 const img = () => {
     return gulp
         .src(imgFiles, { since: gulp.lastRun(img) })
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest(distPath))
 }
 gulp.task(img)
