@@ -2,7 +2,9 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
 const del = require('del')
-// const imagemin = require('gulp-imagemin')
+// gulp-imagemin sometimes install mozjpeg very slowly,
+// you can run `npm i gulp-imagemin -g` and then run `npm link gulp-imagemin`
+const imagemin = require('gulp-imagemin')
 const path = require('path')
 const eslint = require('gulp-eslint')
 const srcPath = './src/**'
@@ -89,7 +91,7 @@ gulp.task(wxss)
 const img = () => {
     return gulp
         .src(imgFiles)
-        // .pipe(imagemin())
+        .pipe(imagemin())
         .pipe(gulp.dest(distPath))
 }
 gulp.task(img)
