@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
+var sass = require('gulp-sass')(require('sass'))
 const rename = require('gulp-rename')
 const del = require('del')
 // gulp-imagemin sometimes install mozjpeg very slowly,
